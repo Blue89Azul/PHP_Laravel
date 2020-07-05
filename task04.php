@@ -1,3 +1,4 @@
+
 <?php
 // 課題１
 function double($num)
