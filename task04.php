@@ -6,6 +6,7 @@ function double($num)
     return $num * 2 ;
 }
 echo double(8);
+echo "\n";
 
 // 課題２
 function addition($a, $b)
@@ -13,6 +14,7 @@ function addition($a, $b)
     return $a + $b;
 }
 echo addition(1, 4);
+echo "\n";
 
 // 課題３
 function multi($arrays)
@@ -25,6 +27,7 @@ function multi($arrays)
 }
 $arr = [1, 3, 5, 7, 9];
 echo multi($arr);
+echo "\n";
 
 // 課題４
  function max_array($arr)
@@ -37,8 +40,9 @@ echo multi($arr);
      return $max_number;
  }
  
- $arr = [1,0,5,700,9,8000];
+ $arr = [1,10000,5,700,9,8000];
  echo max_array($arr);
+ echo "\n";
 
 // 課題５
 // 5-1 strip_tags(文字列からPHP/HTMLタグを取り除く)
