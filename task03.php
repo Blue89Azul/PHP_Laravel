@@ -3,8 +3,10 @@
 $name = "Aoi";
 if ($name == "Aoi") {
     echo "私は{$name}です。";
+    echo "\n";
 } else {
     echo "{$name}ではありません。";
+    echo "\n";
 }
 
 //課題２
@@ -13,6 +15,7 @@ for ($i = 1; $i <=10000; $i++) {
     $total += $i;
 }
 echo $total;
+echo "\n";
 
 //課題３
 $fruits = ["スイカ", "バナナ", "りんご", "みかん", "さくらんぼ"];
