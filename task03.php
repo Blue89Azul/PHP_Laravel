@@ -9,7 +9,7 @@ if ($name == "Aoi") {
 
 //課題２
 $total = 0;
-for ($i = 0; $i <=10000; $i++) {
+for ($i = 1; $i <=10000; $i++) {
     $total += $i;
 }
 echo $total;
@@ -17,14 +17,16 @@ echo $total;
 //課題３
 $fruits = ["スイカ", "バナナ", "りんご", "みかん", "さくらんぼ"];
 foreach ($fruits as $fruit) {
-    echo "\n";
     echo $fruit;
+    echo "\n";
 }
 
 // 課題４
-$start = 5; //初期値を５に変更。
+$start = 0;
 $end = 100;
-for ($i = $start; $i <= $end; $i+=5) { //$iのインクレメントを５づつカウントアップ。
-    echo "\n"; //課題３の回答から改行させるため、ここに\nを配置。
-    echo $i;
+for ($i = $start; $i <= $end; $i+=5) {
+    if ($i !== 0) {
+        echo $i;
+        echo "\n";
+    }
 }
