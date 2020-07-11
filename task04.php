@@ -29,12 +29,12 @@ $arr = [1, 3, 5, 7, 9];
 echo multi($arr);
 echo "\n";
 
-// 課題４−１(ソートあり・ループありVer)
+// 課題４−１(ソートあり・ループなしVer)
  function max_array($arr)
  {
      //*備忘録
      //arsortはキー(添字)と値が一緒に昇順に変わる。
-     //resortは、値を昇順にソートするだけ。
+     //rsortは、値を昇順にソートするだけ。
      rsort($arr);
      echo $arr[0];
  }
