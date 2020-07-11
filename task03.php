@@ -25,7 +25,7 @@ foreach ($fruits as $fruit) {
 }
 
 // 課題４
-$start = 0;
+$start = 1;
 $end = 100;
 for ($i = $start; $i <= $end; $i++) {
     if ($i!==0 && $i%5 === 0) {

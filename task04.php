@@ -1,5 +1,5 @@
-
 <?php
+
 // 課題１
 function double($num)
 {
@@ -32,14 +32,15 @@ echo "\n";
 // 課題４−１(ソートあり・ループありVer)
  function max_array($arr)
  {
-     asort($arr);
-     foreach ($arr as $a) {
-         $max_number = $a;
-     }
-     return $max_number;
+     //*備忘録
+     //arsortはキー(添字)と値が一緒に昇順に変わる。
+     //resortは、値を昇順にソートするだけ。
+     rsort($arr);
+     echo $arr[0];
  }
+ 
  $arr = [1,10000,5,700,9,8000];
- echo max_array($arr);
+ max_array($arr);
  echo "\n";
  
 //課題４−２（ソートなし・ループありVer）
@@ -53,7 +54,7 @@ echo "\n";
      }
      return $max_number;
  }
- $arr = [1,10000,5,700,9000000,8000];
+ $arr = [1,10000,5,700,9,8000];
  echo max_array2($arr);
  echo "\n";
  
